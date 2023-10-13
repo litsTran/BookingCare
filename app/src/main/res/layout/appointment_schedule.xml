@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appointmentschedule"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCaNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvTenBenhNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Họ tên bệnh nhân: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Giới tính:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvSoDienThoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTenBenhNhan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Số điện thoại: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSoDienThoai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Địa chỉ: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvGioKham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDiaChi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Giờ khám: "
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/XacNhan"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvGioKham"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Xác nhận"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bocong" />
+
+        <Button
+            android:id="@+id/Huy"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvGioKham"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="24dp"
+            android:text="Hủy"
+            android:textSize="16sp"
+            android:background="@drawable/bocong" />
+    </LinearLayout>
+
+</LinearLayout>

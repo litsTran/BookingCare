@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatlichF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="731dp">
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="409dp"
+                    android:layout_height="130dp"
+                    android:background="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/imgbt1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="250dp"
+                    android:layout_height="126dp"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="Tiến sĩ, Bác sĩ Nguyễn Văn Lý"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="246dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bocong"
+                    android:text="Xác nhận đặt lịch"
+                    android:textColor="@color/black"
+                    android:typeface="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <ImageView
+                    android:id="@+id/imgbt1"
+                    android:layout_width="126dp"
+                    android:layout_height="126dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/tron"
+                    android:src="@drawable/img_5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGender"
+                    android:layout_width="403dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="136dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="200dp"
+                        android:layout_height="56dp"
+                        android:text="Đặt cho người thân"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="200dp"
+                        android:layout_height="56dp"
+                        android:text="Đặt cho mình"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="390dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bovien"
+                    android:typeface="serif"
+                    android:hint="Họ tên bệnh nhân (bắt buộc)"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGender" />
+
+                <RadioGroup
+                    android:id="@+id/radioGendera"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etFullName">
+
+                    <RadioButton
+                        android:id="@+id/rbMalea"
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:text="Nam"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:typeface="serif"/>
+
+                    <RadioButton
+                        android:id="@+id/rbFemalea"
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:text="Nữ"
+                        android:typeface="serif"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/a123"
+                    android:layout_width="390dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bovien"
+                    android:hint="Số điện thoại(bắt buộc)"
+                    android:typeface="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGendera" />
+
+                <EditText
+                    android:id="@+id/a"
+                    android:layout_width="390dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bovien"
+                    android:hint="Địa chỉ (bắt buộc)"
+                    android:typeface="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/a123" />
+
+                <RadioGroup
+                    android:id="@+id/genderRG"
+                    android:layout_width="410dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="8dp"
+                    android:checkedButton="@id/male"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/a">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="136dp"
+                        android:layout_height="63dp"
+                        android:background="@drawable/gender_background_selector"
+                        android:button="@android:color/transparent"
+                        android:text="08:00 - 10:30"
+                        android:typeface="serif"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="136dp"
+                        android:layout_height="63dp"
+                        android:background="@drawable/gender_background_selector"
+                        android:button="@android:color/transparent"
+                        android:text="10:30 - 13:00"
+                        android:typeface="serif"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/female2"
+                        android:layout_width="136dp"
+                        android:layout_height="63dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gender_background_selector"
+                        android:button="@android:color/transparent"
+                        android:text="14:00 - 15:30"
+                        android:typeface="serif"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="408dp"
+                    android:layout_height="142dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/lavender"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="LƯU Ý
+                    \nThông tin anh/chị cung cấp sẽ được sử dụng làm hồ sơ khám bệnh, khi điền thông tin anh/chị vui lòng:
+                    \n• Ghi rõ họ và tên, viết hoa những chữ cái đầu tiên, ví dụ: Trần Văn Phú
+                    \n• Điền đầy đủ, đúng và vui lòng kiểm tra lại thông tin trước khi ấn
+                    \n• Thanh toán sau khi thăm khám xong"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/genderRG" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
